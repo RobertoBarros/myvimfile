@@ -1,4 +1,10 @@
-source ~/vimfiles/vimrc   "Source: https://github.com/akitaonrails/vimfiles
+if has('win32') 
+	source ~/vimfiles/vimrc   "Source: https://github.com/akitaonrails/vimfiles
+endif
+
+if has('mac')
+    source ~/.vim/vimrc
+endif
 
 noremap <Leader>s :update<CR>          
 
