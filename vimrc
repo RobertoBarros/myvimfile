@@ -13,7 +13,7 @@ set smartcase                          " But be smart about it
 set fileencodings=utf-8                " Default to using UTF-8
 set confirm                            " Make vim ask you to yes/no confirm commands
 
-map! ii <Esc> " map ii to Esc
+map! jj <Esc> " map jj to Esc
 
 let g:netrw_scp_cmd = "pscp.exe -pw <put pass here>" "For windows SSH
 
