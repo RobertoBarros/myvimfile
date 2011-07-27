@@ -6,6 +6,14 @@ if has('mac')
     source ~/.vim/vimrc
 endif
 
+" Salva todos os buffers quando vim perde o foco 
+:au FocusLost * :wa
+
+" Alterna entre os buffers usando ctrl+alt+seta esquerda/direita
+let macvim_skip_cmd_opt_movement = 1
+map <C-M-Right> :bn!<CR>
+map <C-M-Left> :bp!<CR>
+
 noremap <Leader>s :update<CR>          
 
 set ignorecase                         " Ignore case when searching
