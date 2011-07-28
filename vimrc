@@ -9,10 +9,10 @@ endif
 " Salva todos os buffers quando vim perde o foco 
 :au FocusLost * :wa
 
-" Alterna entre os buffers usando ctrl+alt+seta esquerda/direita
+" Alterna entre os buffers usando command+alt+seta esquerda/direita
 let macvim_skip_cmd_opt_movement = 1
-map <C-M-Right> :bn!<CR>
-map <C-M-Left> :bp!<CR>
+map <D-M-Right> :bn!<CR>
+map <D-M-Left> :bp!<CR>
 
 noremap <Leader>s :update<CR>          
 
