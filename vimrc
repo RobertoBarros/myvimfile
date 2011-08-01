@@ -6,6 +6,9 @@ if has('mac')
     source ~/.vim/vimrc
 endif
 
+" Envia mais caracteres ao terminal, melhorando o redraw de janelas.
+set ttyfast
+
 " Salva todos os buffers quando vim perde o foco 
 :au FocusLost * :wa
 
