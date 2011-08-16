@@ -24,9 +24,15 @@ set smartcase                          " But be smart about it
 set fileencodings=utf-8                " Default to using UTF-8
 set confirm                            " Make vim ask you to yes/no confirm commands
 
-map! jj <Esc> " map jj to Esc
+"map! jj <Esc>
+inoremap <CR> <Esc> 
 
 let g:netrw_scp_cmd = "pscp.exe -pw <put pass here>" "For windows SSH
+
+
+" Salva e dá refresh no browser ativo usando <leader>r
+" Requer plugin https://github.com/mkitt/browser-refresh.vim
+map <silent><leader>r :wa<CR>:RRB<CR>
 
 
 " Quickly edit/reload the vimrc file
