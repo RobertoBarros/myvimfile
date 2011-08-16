@@ -17,6 +17,10 @@ let macvim_skip_cmd_opt_movement = 1
 map <D-M-Right> :bn!<CR>
 map <D-M-Left> :bp!<CR>
 
+"Navega entre as TABs usando command+alt+set up/down
+map <D-M-Down> :tabn<CR>
+map <D-M-Up> :tabp<CR>
+
 noremap <Leader>s :update<CR>          
 
 set ignorecase                         " Ignore case when searching
